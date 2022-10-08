@@ -7,5 +7,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Try it in your browser
+If you don't want to download any files you can go to this website and try it here
+https://badless.github.io/NeuOS/src/
+
 ## License
 [Apache License 2.0](https://github.com/Badless/NeuOS/blob/main/LICENSE)
