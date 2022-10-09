@@ -14,7 +14,7 @@ If you don't want to download any files you can go to this website and try it [h
 [-] Updated Plasma Editor<br>
 [+] Added Toolbar<br>
 [+] Added favicon<br>
-[+] Added Tetris
+[+] Added Tetris<br>
 [+] Added Plasma Web
 </details>
 
