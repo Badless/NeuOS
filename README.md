@@ -7,7 +7,12 @@ If you don't want to download any files you can go to this website and try it [h
 
 
 ## Changelog
-(9.10.2022) Update: Added Welcome App, Updated Plasma Editor, Added Toolbar, favicon!
+(9.10.2022):
+[+] Added Welcome App
+[-] Updated Plasma Editor
+[+] Added Toolbar
+[+] Added favicon
+[+] Added Tetris
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
