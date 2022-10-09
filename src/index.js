@@ -99,8 +99,12 @@ window.popup6 = function() {
         height: 600,
         title: 'Minecraft',
         text: '<iframe height=482 width=856 src="https://g.deev.is/eaglercraft/"></iframe>',
-        showMax: false
-    });
+        showMax: false,
+        actions: ['Fullscreen'],
+    })
+    .fullscreen(() => {
+        window.open("https://g.deev.is/eaglercraft/","_self")
+    })
 }
 
 new w2toolbar({
