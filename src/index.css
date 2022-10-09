@@ -7,3 +7,7 @@
     height: 100%;
     transform: translateY(-8px) translateX(-8px);
 }
+
+.editorIcon:before {
+    content: url("../images/plasma-editor.png");
+}
