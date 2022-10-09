@@ -34,20 +34,34 @@ new w2toolbar({
     box: '#toolbar',
     name: 'toolbar',
     items: [
-        { type: 'button', id: 'item1', text: 'Welcome', icon: 'w2ui-icon-info' },
+		{ type: 'html',  id: 'item1',
+            html(item) {
+                let html =
+                    '<div style="padding: 0px 10px; margin-top: -2px;">'+
+                    ''+
+                    '    <input size="20" placeholder="Run..." onchange="var el = w2ui.toolbar.set(\'item5\', { value: this.value });" '+
+                    '         class="w2ui-input" value="'+ (item.value || '') +'"/>'+
+                    '</div>';
+                return html;
+            }
+        },
+		{ type: 'break' },
+        { type: 'button', id: 'item2', text: 'Welcome', icon: 'w2ui-icon-info' },
+        { type: 'button', id: 'item3', text: 'Editor', icon: 'w2ui-icon-pencil' },
         { type: 'break' },
-        { type: 'button', id: 'item2', text: 'Editor', icon: 'w2ui-icon-pencil' },
-        { type: 'break' },
-        { type: 'drop',  id: 'item3', text: 'Power', icon: 'w2ui-icon-settings',
-            html: '<button onclick="self.close()">Power Off</button>'
+        { type: 'drop',  id: 'item4', text: 'Power', icon: 'w2ui-icon-settings',
+            html: '<button onclick="self.close()">Log Off</button>'
         },
         { type: 'break' },
     ],
     onClick(event) {
-        if (event.target == 'item1') {
-            popup3();
+		if (event.target == 'item1') {
+            if (content == "plasma-editor") popup2();
         }
         if (event.target == 'item2') {
+            popup3();
+        }
+        if (event.target == 'item3') {
             popup2();
         }
     }
