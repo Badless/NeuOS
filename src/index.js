@@ -93,6 +93,16 @@ window.popup5 = function() {
     });
 }
 
+window.popup6 = function() {
+    w2popup.open({
+        width: 900,
+        height: 600,
+        title: 'Minecraft',
+        text: '<iframe height=482 width=856 src="https://g.deev.is/eaglercraft/"></iframe>',
+        showMax: false
+    });
+}
+
 new w2toolbar({
     box: '#toolbar',
     name: 'toolbar',
@@ -103,6 +113,7 @@ new w2toolbar({
         { type: 'button', id: 'item3', text: 'Editor', icon: 'w2ui-icon-pencil' },
         { type: 'button', id: 'item4', text: 'Tetris', icon: 'w2ui-icon-columns' },
 		{ type: 'button', id: 'item5', text: 'Web', icon: 'w2ui-icon-drop' },
+        { type: 'button', id: 'item6', text: 'Minecraft', icon: 'w2ui-icon-drop' },
         { type: 'break' },
         { type: 'drop',  id: 'item4', text: 'Power', icon: 'w2ui-icon-settings',
             html: '<button onclick="self.close()">Log Off</button>'
@@ -125,6 +136,9 @@ new w2toolbar({
         }
 		if (event.target == "item5") {
             popup5();
+        }
+        if (event.target == 'item6') {
+            popup6();
         }
 		
 
