@@ -71,6 +71,28 @@ window.popup4 = function() {
     })
 }
 
+window.popup5 = function() {
+    w2popup.open({
+        width: 1280,
+        height: 720,
+        title: 'Plasma Web',
+        text: '<iframe height=585 width=1250 src="https://www.bing.com"></iframe>',
+        actions: {
+            URL() {
+                w2prompt('Enter URL (this doesnt work)')
+                    .ok(event => {
+                        console.log('value=', event.detail.value)
+                    })
+            },
+            More() {
+                counter = 0
+                show()
+            }
+        },
+        showMax: false
+    });
+}
+
 new w2toolbar({
     box: '#toolbar',
     name: 'toolbar',
@@ -80,6 +102,7 @@ new w2toolbar({
         { type: 'button', id: 'item2', text: 'Welcome', icon: 'w2ui-icon-info' },
         { type: 'button', id: 'item3', text: 'Editor', icon: 'w2ui-icon-pencil' },
         { type: 'button', id: 'item4', text: 'Tetris', icon: 'w2ui-icon-columns' },
+		{ type: 'button', id: 'item5', text: 'Web', icon: 'w2ui-icon-drop' },
         { type: 'break' },
         { type: 'drop',  id: 'item4', text: 'Power', icon: 'w2ui-icon-settings',
             html: '<button onclick="self.close()">Log Off</button>'
@@ -100,5 +123,10 @@ new w2toolbar({
         if (event.target == "item4") {
             popup4();
         }
+		if (event.target == "item5") {
+            popup5();
+        }
+		
+
     }
 })
