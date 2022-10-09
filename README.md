@@ -15,6 +15,7 @@ If you don't want to download any files you can go to this website and try it [h
 [+] Added Toolbar<br>
 [+] Added favicon<br>
 [+] Added Tetris
+[+] Added Plasma Web
 </details>
 
 ## Contributing
