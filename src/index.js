@@ -76,7 +76,7 @@ window.popup5 = function() {
         width: 1280,
         height: 720,
         title: 'Plasma Web',
-        text: '<iframe height=585 width=1250 src="https://www.bing.com"></iframe>',
+        text: '<iframe height=585 width=1250 src="https://www.metacrawler.com/"></iframe>',
         actions: {
             URL() {
                 w2prompt('Enter URL (this doesnt work)')
