@@ -1,4 +1,4 @@
-import { w2popup,w2alert,w2confirm,w2prompt, w2utils, w2toolbar, query } from 'https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.es6.min.js'
+import { w2popup,w2alert,w2confirm,w2prompt, w2utils, w2toolbar, query, w2tabs } from 'https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.es6.min.js'
 
 window.popup2 = function() {
     w2popup.open({
@@ -17,7 +17,10 @@ window.popup2 = function() {
 window.popup3 = function() {
     w2popup.open({
         title: 'Welcome',
-        text: 'Welcome to NeuOS: Open Source OS runnable in your browser!'
+        width: 400,
+        height: 250,
+        text: 'Welcome to NeuOS: Open Source OS runnable in your browser!<br>' +
+        '<button class="w2ui-btn" style="cursor: pointer" onclick="window.open("https://discord.gg/aj88jARKux", "_self")"><img style="cursor: pointer;" src="../images/logo_64x64.png"/><p>Our Discord</p></button>'
     })
 }
 
@@ -76,7 +79,7 @@ window.popup5 = function() {
         width: 1280,
         height: 720,
         title: 'Plasma Web',
-        text: '<iframe height=585 width=1250 src="https://www.bing.com"></iframe>',
+        text: '<iframe height=585 width=1250 src="https://www.metacrawler.com/"></iframe>',
         actions: {
             URL() {
                 w2prompt('Enter URL (this doesnt work)')
@@ -119,10 +122,7 @@ new w2toolbar({
 		{ type: 'button', id: 'item5', text: 'Web', icon: 'w2ui-icon-drop' },
         { type: 'button', id: 'item6', text: 'Minecraft', icon: 'w2ui-icon-drop' },
         { type: 'break' },
-        { type: 'drop',  id: 'item4', text: 'Power', icon: 'w2ui-icon-settings',
-            html: '<button onclick="self.close()">Log Off</button>'
-        },
-        { type: 'break' },
+        { type: 'button', id: 'item7', text: 'Our Discord', icon: 'w2ui-icon-info' },
     ],
     onClick(event) {
         if (event.target == 'item1') {
@@ -144,7 +144,9 @@ new w2toolbar({
         if (event.target == 'item6') {
             popup6();
         }
-		
+		if (event.target == 'item7') {
+            window.open("https://discord.gg/aj88jARKux", "_self");
+        }
 
     }
 })
