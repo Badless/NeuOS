@@ -26,8 +26,9 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 <summary>(10.10.2022)</summary>
 <br>
 [?] Moved Discord Button<br>
-[+] Added settings (wip)<br>
-[?] Changed Plasma Web search engine from Microsoft Bing to MetaClawrer + Fixed URL<br>
+[+] Added Settings<br>
+[-] Fixed Plasma Web<br>
+[+] Added Plasma Software
 </details>
 
 ## Contributing
