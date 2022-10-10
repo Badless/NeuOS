@@ -14,7 +14,7 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 <summary>(09.10.2022)</summary>
 <br>
 [+] Added Welcome App<br>
-[-] Updated Plasma Editor<br>
+[?] Updated Plasma Editor<br>
 [+] Added Toolbar<br>
 [+] Added favicon<br>
 [+] Added Tetris<br>
@@ -25,7 +25,9 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 <details>
 <summary>(10.10.2022)</summary>
 <br>
-[-] Moved Discord Button
+[?] Moved Discord Button
+[+] Added settings (wip)
+[?] Changed Plasma Web search engine from Microsoft Bing to MetaClawrer + Fixed URL
 </details>
 
 ## Contributing
