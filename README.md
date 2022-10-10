@@ -6,7 +6,7 @@ NeuOS is Operating System that can run in your web browser created with [w2ui](h
 If you don't want to download any files you can go to this website and try it [here](https://badless.github.io/NeuOS/src/)
 
 ## Donate
-Our OS doesn't have any ads, its free to use and we don't want to change it!
+Our OS doesn't have any ads, its free to use and we don't want to change it!<br>
 Please consider [donating](https://paypal.me/badlesstv) to help us get domain. Thanks :)
 
 ## Changelog
