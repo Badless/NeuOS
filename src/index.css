@@ -8,6 +8,9 @@
     transform: translateY(-8px) translateX(-8px);
 }
 
-.editorIcon:before {
-    content: url("../images/plasma-editor.png");
+.w2ui-field input {
+    width: 400px;
+}
+.w2ui-field > div > span {
+    margin-left: 20px;
 }
