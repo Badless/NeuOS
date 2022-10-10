@@ -27,7 +27,7 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 <br>
 [?] Moved Discord Button<br>
 [+] Added Settings<br>
-[-] Fixed Plasma Web<br>
+[?] Fixed Plasma Web<br>
 [+] Added Plasma Software
 </details>
 
