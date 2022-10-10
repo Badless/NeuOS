@@ -22,6 +22,7 @@ If you don't want to download any files you can go to this website and try it [h
 <details>
 <summary>(10.10.2022)</summary>
 <br>
+[-] Moved Discord Button
 </details>
 
 ## Contributing
