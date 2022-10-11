@@ -1,4 +1,4 @@
-# NeuOS https://img.shields.io/endpoint?url=<https://discord.gg/FHNfYAnvP6>&style<blue>
+# NeuOS 
 
 NeuOS is Operating System that can run in your web browser created with [w2ui](https://w2ui.com/web/) 
 
