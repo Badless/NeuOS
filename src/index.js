@@ -29,7 +29,8 @@ let config = {
             { id: 'general', text: 'General', group: true, expanded: true,
                 nodes: [
                     { id: 'html', text: 'Welcome', icon: 'w2ui-icon-info', selected: true },
-                    { id: 'html2', text: 'Appearance', icon: 'w2ui-icon-settings' }
+                    { id: 'html2', text: 'Appearance', icon: 'w2ui-icon-settings' },
+                    { id: 'html3', text: 'Plasma Web', icon: 'w2ui-icon-drop' }
                 ]
             }
         ],
@@ -40,6 +41,9 @@ let config = {
                     break
                 case 'html2':
                     layout.html('main', html2)
+                    break
+                case 'html3':
+                    layout.html('main', html3)
                     break
             }
         }
@@ -76,7 +80,8 @@ let html2 = `
 <div class="w2ui-field w2ui-span3">
     <label>Theme:</label>
     <div>
-        <input type="theme" placeholder="Type to search">
+        <input type="theme" placeholder="Type to search"><br>
+        Coming Really Soon! (w2ui have to release dark theme first)
     </div>
 </div>
 <div style="height: 10px"></div>
@@ -101,7 +106,59 @@ new w2field('list', { el: query('input[type=theme]')[0], items: themes, match: '
 </html>
 </center>
 `;
+let html3 = `
+<center>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css">
+</head>
+<body>
 
+<div style="height: 20px"></div>
+<div class="w2ui-field w2ui-span3">
+    <label style="width: 85px">Search Engine:</label>
+    <div>
+        <input id="engine" type="list" placeholder="Type to search"><br>
+        <button class="w2ui-btn" onclick="show('list1')">Get Selected</button><br>
+        Will be fixed soon!
+    </div>
+</div>
+<div style="height: 10px"></div>
+<style>
+.w2ui-field input {
+    width: 200px;
+}
+.w2ui-field > div > span {
+    margin-left: 20px;
+}
+</style>
+
+<script type="module">
+import { w2field, query, w2alert } from 'https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.es6.min.js'
+
+let engines = ['MetaCrawler (default)', 'Bing'];
+engines.sort();
+window.list1 = new w2field('list', { el: query('input[type=list]')[0], items: engines })
+
+let link;
+var element = document.getElementById("engine");
+if (element.value == "MetaCrawler (default)") {
+    link = "metacrawler";
+}
+if (element.value == "Bing") {
+    link = "bing";
+}
+
+window.show = function(type) {
+    w2alert(link)
+}
+</script>
+
+</body>
+</html>
+</center>
+`;
 window.openPopup = function openPopup() {
     w2popup.open({
         title: 'Settings',
