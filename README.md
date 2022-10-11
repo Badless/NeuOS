@@ -1,4 +1,4 @@
-# NeuOS 
+# NeuOS [![discord](https://github.com/qubiX00/qubiX00/blob/main/discord.png?raw=true)]((https://discord.gg/FHNfYAnvP6))
 
 NeuOS is Operating System that can run in your web browser created with [w2ui](https://w2ui.com/web/) 
 
