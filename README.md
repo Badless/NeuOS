@@ -31,6 +31,10 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 [+] Added Plasma Software
 </details>
 
+<details>
+<summary>(11.10.2022)</summary>
+</details>
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
