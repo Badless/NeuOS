@@ -35,6 +35,9 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 <summary>(11.10.2022)</summary>
 </details>
 
+## Have an idea for our os?
+If you have any idea that you think will be good, then you can post it on our [Discord](https://discord.gg/FHNfYAnvP6). You can also add some additional code which could help us to make it
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
