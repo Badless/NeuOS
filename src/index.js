@@ -270,6 +270,16 @@ window.popup6 = function() {
     })
 }
 
+window.popup7 = function() {
+    w2popup.open({
+        width: 1500,
+        height: 900,
+        title: 'Photopea',
+        text: '<iframe height=840 width=1460 src="https://www.photopea.com"></iframe>',
+        showMax: false,
+    })
+}
+
 new w2toolbar({
     box: '#toolbar',
     name: 'toolbar',
@@ -282,8 +292,9 @@ new w2toolbar({
 		{ type: 'button', id: 'item5', text: 'Web', icon: 'w2ui-icon-drop' },
         { type: 'button', id: 'item6', text: 'Minecraft', icon: 'w2ui-icon-drop' },
         { type: 'button', id: 'item7', text: 'Software', icon: 'w2ui-icon-settings' },
+		{ type: 'button', id: 'item8', text: 'Photopea', icon: 'w2ui-icon-colors' },
         { type: 'break' },
-        { type: 'button', id: 'item8', text: 'Our Discord', icon: 'w2ui-icon-info' },
+        { type: 'button', id: 'item1000', text: 'Our Discord', icon: 'w2ui-icon-info' },
     ],
     onClick(event) {
         if (event.target == 'item1') {
@@ -309,6 +320,9 @@ new w2toolbar({
             popup3();
         }
 		if (event.target == 'item8') {
+            popup7();
+        }
+		if (event.target == 'item1000') {
             window.open("https://discord.gg/aj88jARKux", "_self");
         }
 
