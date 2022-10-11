@@ -33,6 +33,7 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 
 <details>
 <summary>(11.10.2022)</summary>
+[+] More Settings
 </details>
 
 ## Have an idea for our os?
