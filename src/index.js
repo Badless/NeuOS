@@ -52,7 +52,7 @@ let sidebar = new w2sidebar(config.sidebar)
 let html = `
 <center><img src="../images/welcome.png" width=100px height=100px />
 <br><h2 style="height: 30px">Welcome to NeuOS: Open Source OS runnable in your browser!</h2><br>
-<button class="w2ui-btn" style="cursor: pointer; width: 128px; height: 128px;" onclick="window.open("https://discord.gg/aj88jARKux", "_self")">
+<button class="w2ui-btn" style="cursor: pointer; width: 128px; height: 128px;" onclick="window.open('https://discord.gg/aj88jARKux', '_self')">
 <img style="cursor: pointer;" src="../images/logo_64x64.png"/>
 <p>Our Discord</p>
 </button>
