@@ -37,6 +37,12 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 [+] Added Photopea<br>
 </details>
 
+<details>
+<summary>(11.10.2022)</summary>
+[+] Plasma Software Done!<br>
+[?] Plasma Web Settings almost done!
+</details>
+
 ## Have an idea for our os?
 If you have any idea that you think will be good, then you can post it on our [Discord](https://discord.gg/FHNfYAnvP6). You can also add some additional code which could help us to make it
 
