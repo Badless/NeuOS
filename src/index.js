@@ -30,7 +30,9 @@ let config = {
                 nodes: [
                     { id: 'html', text: 'Welcome', icon: 'w2ui-icon-info', selected: true },
                     { id: 'html2', text: 'Appearance', icon: 'w2ui-icon-settings' },
-                    { id: 'html3', text: 'Plasma Web', icon: 'w2ui-icon-drop' }
+                    { id: 'html3', text: 'Plasma Web', icon: 'w2ui-icon-drop' },
+                    { id: 'html4', text: 'Apps', icon: 'w2ui-icon-plus' },
+                    { id: 'html5', text: 'Changelog', icon: 'w2ui-icon-pencil' }
                 ]
             }
         ],
@@ -44,6 +46,12 @@ let config = {
                     break
                 case 'html3':
                     layout.html('main', html3)
+                    break
+                case 'html4':
+                    layout.html('main', html4)
+                    break
+                case 'html5':
+                    layout.html('main', html5)
                     break
             }
         }
@@ -152,6 +160,22 @@ window.show = function(type) {
 </html>
 </center>
 `;
+let html4 = `
+<center padding: 3px;>
+<p>Settings: Basic Settings App</p><br>
+<p>Plasma Editor: Basic Code Editor</p><br>
+<p>Tetris: Tetris Game</p><br>
+<p>Plasma Web: Web Browser supporting Bing and MetaCrawler</p><br>
+<p>Minecraft (eaglecrafter): Minecraft Game</p><br>
+<p>Plasma Software: Software Downloader for NeuOS</p><br>
+<p>Photopea: Advanced Graphic Editor</p><br>
+<p>Pico-8 Fantasy Console: Engine for low-res games</p><br>
+</center>
+`;
+let html5 = `
+<h1>12.10.2022</h1><br>
+<p>Added Changelog tab</p><br>
+`;
 window.openPopup = function openPopup() {
     w2popup.open({
         title: 'Settings',
@@ -243,7 +267,7 @@ window.popup5 = function() {
         width: 1280,
         height: 720,
         title: 'Plasma Web',
-        text: '<iframe id="urlInput" height=585 width=1250 src="https://www.metacrawler.com/serp?q=Use URL Button (bottom)&sc=o2jmzhEuXvyE20"></iframe>',
+        text: '<iframe id="urlInput" height=635 width=1250 src="https://www.metacrawler.com/serp?q=Use URL Button (bottom)&sc=o2jmzhEuXvyE20"></iframe>',
         actions: {
             URL() {
                 w2prompt('Enter URL:')
@@ -277,10 +301,20 @@ window.popup6 = function() {
 
 window.popup7 = function() {
     w2popup.open({
-        width: 1500,
-        height: 900,
+        width: 1280,
+        height: 720,
         title: 'Photopea',
-        text: '<iframe height=840 width=1460 src="https://www.photopea.com"></iframe>',
+        text: '<iframe height=635 width=1250 src="https://www.photopea.com"></iframe>',
+        showMax: false,
+    })
+}
+
+window.popup8 = function() {
+    w2popup.open({
+        width: 1280,
+        height: 720,
+        title: 'Pico-8 Fantasy Console',
+        text: '<iframe height=635 width=1250 src="https://www.lexaloffle.com/pico-8.php"></iframe>',
         showMax: false,
     })
 }
@@ -298,6 +332,7 @@ new w2toolbar({
         { type: 'button', id: 'item6', text: 'Minecraft', icon: 'w2ui-icon-drop' },
         { type: 'button', id: 'item7', text: 'Software', icon: 'w2ui-icon-settings' },
 		{ type: 'button', id: 'item8', text: 'Photopea', icon: 'w2ui-icon-colors' },
+        { type: 'button', id: 'item9', text: 'Pico-8', icon: 'w2ui-icon-drop' },
         { type: 'break' },
         { type: 'button', id: 'item1000', text: 'Our Discord', icon: 'w2ui-icon-info' },
     ],
@@ -326,6 +361,9 @@ new w2toolbar({
         }
 		if (event.target == 'item8') {
             popup7();
+        }
+        if (event.target == 'item9') {
+            popup8();
         }
 		if (event.target == 'item1000') {
             window.open("https://discord.gg/aj88jARKux", "_self");
