@@ -141,17 +141,10 @@ let engines = ['MetaCrawler (default)', 'Bing'];
 engines.sort();
 window.list1 = new w2field('list', { el: query('input[type=list]')[0], items: engines })
 
-let link;
 var element = document.getElementById("engine");
-if (element.value == "MetaCrawler (default)") {
-    link = "metacrawler";
-}
-if (element.value == "Bing") {
-    link = "bing";
-}
 
 window.show = function(type) {
-    w2alert(link)
+    w2alert(element.value)
 }
 </script>
 
@@ -183,12 +176,24 @@ window.showMessage = function(text) {
     });
 }
 
+let storeHTML = `
+<center style="transform: translateY(-180px);">
+<h1 style="height: 40px">Plasma Software</h1>
+<h2 style="height: 30px">Here you can download more applications!</h2><br>
+<button class="w2ui-btn" style="cursor: pointer; width: 700px; height: 86px;">
+<img style="cursor: pointer; transform: translateX(-280px);" src="../images/logo_64x64.png"/>
+<h2 style="transform: translateY(-70px) translateX(-180px); height: 30px">Application</h2>
+<h2 style="position: absolute; transform: translateY(-115px) translateX(550px); height: 30px">Click To<br>Download</h2>
+<h3 style="transform: translateY(-85px) translateX(-140px); height: 30px">Application Short Description</h3>
+</button>
+</center>
+`;
 window.popup3 = function() {
     w2popup.open({
         title: 'Plasma Software',
-        width: 400,
-        height: 250,
-        text: `<h1>Coming Soon!</h1>`
+        width: 800,
+        height: 600,
+        text: "<h1>No Applications<br>Waiting for App Requests</h1>"
     })
 }
 
