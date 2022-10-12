@@ -162,19 +162,21 @@ window.show = function(type) {
 `;
 let html4 = `
 <center padding: 3px;>
-<p>Settings: Basic Settings App</p><br>
-<p>Plasma Editor: Basic Code Editor</p><br>
-<p>Tetris: Tetris Game</p><br>
-<p>Plasma Web: Web Browser supporting Bing and MetaCrawler</p><br>
-<p>Minecraft (eaglecrafter): Minecraft Game</p><br>
-<p>Plasma Software: Software Downloader for NeuOS</p><br>
-<p>Photopea: Advanced Graphic Editor</p><br>
-<p>Pico-8 Fantasy Console: Engine for low-res games</p><br>
+<p>Settings: Basic Settings App</p>
+<p>Plasma Editor: Basic Code Editor</p>
+<p>Tetris: Tetris Game</p>
+<p>Plasma Web: Web Browser supporting Bing and MetaCrawler</p>
+<p>Minecraft (eaglercraft): Minecraft Game</p>
+<p>Plasma Software: Software Downloader for NeuOS</p>
+<p>Photopea: Advanced Graphic Editor</p>
+<p>Pico-8 Fantasy Console: Engine for low-res games</p>
 </center>
 `;
 let html5 = `
-<h1>12.10.2022</h1><br>
-<p>Added Changelog tab</p><br>
+<h1 style="height: 40px;">12.10.2022</h1>
+<p>Added Changelog tab</p>
+<p>Added Pico-8</p>
+<p>Plasma Software Done</p>
 `;
 window.openPopup = function openPopup() {
     w2popup.open({
