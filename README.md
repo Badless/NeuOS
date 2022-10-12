@@ -40,7 +40,9 @@ Please consider [donating](https://paypal.me/badlesstv) to help us get domain. T
 <details>
 <summary>(12.10.2022)</summary>
 [+] Plasma Software Done!<br>
-[?] Plasma Web Settings almost done!
+[?] Plasma Web Settings almost done!<br>
+[+] Added Pico-8<br>
+[+] Added some additional settings
 </details>
 
 ## Have an idea for our os?
